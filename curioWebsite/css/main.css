@@ -59,9 +59,44 @@ button{
 }
 
 
+/* Eerstejaar */
+.eersteJaar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.eersteJaarText{
+    margin: auto;
+    margin: 50px 0px;
+}
+
+
+/* Vakken */
+.vakkenText > h3{
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.vak{
+    background-color: #ffcc00;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+ul{
+    margin-left: 20px;
+}
+
 /*Algemeen*/
 img{
-    width: 40%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 h3{
@@ -70,5 +105,5 @@ h3{
 }
 
 .docent > img{
-    width: 10%;
+    width: 50%;
 }
