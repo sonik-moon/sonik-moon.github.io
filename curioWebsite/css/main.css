@@ -9,6 +9,8 @@ body{
     margin: auto;
 }
 
+
+/* Header */
 header{
     display: flex;
     justify-content: space-between;
@@ -73,8 +75,12 @@ button{
 
 
 /* Vakken */
+.vakkenText{
+    margin: 20px 0px;
+}
+
 .vakkenText > h3{
-    margin: auto;
+    text-align: center;
 }
 
 .container{
@@ -93,6 +99,46 @@ ul{
     margin-left: 20px;
 }
 
+
+/* Rooster */
+.rooster{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.roosterText{
+    margin: auto;
+    margin: 50px 0px;
+}
+
+.roosterImg{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Docenten */
+.docent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.docent > img{
+    width: 50%;
+}
+
+.docentenText{
+    margin: 20px 0px;
+}
+
+.docentenText > h3{
+    text-align: center;
+}
+
+
 /*Algemeen*/
 img{
     width: 100%;
@@ -104,6 +150,30 @@ h3{
     margin-bottom: 15px;
 }
 
-.docent > img{
-    width: 50%;
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .homeText {
+        padding:0;
+    }
+
+    .button {
+        margin-bottom:30px;
+    }
+
+    .eersteJaar {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .rooster {
+        grid-template-columns: 1fr;
+    }
 }
